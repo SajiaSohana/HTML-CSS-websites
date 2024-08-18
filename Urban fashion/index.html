@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban Fashion</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <div class="navbar">
-        <img src="./assets/logo.png" alt="logo image" class="logo">
-        <nav>
+        <img src="./assets/logo.png" alt="logo image" class="logo animate__animated animate__backInDown ">
+        <nav class="animate__animated animate__backInDown animate__slow">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -19,7 +23,24 @@
                 <li><a href="#">Category</a></li>
             </ul>
         </nav>
-        <img src="./assets/cart.png" alt="cart image" class="cart">
+        <img src="./assets/cart.png" alt="cart image" class="cart animate__animated animate__backInDown animate__slower">
+    </div>
+    <div class="content animate__animated animate__backInLeft animate__delay-3s">
+      <a href="#" class="btn">2024 Collection</a>
+      <h1>You should always <br>
+      feel pretty</h1>
+        <p>clothes that are sure to heat up your winter.</p>
+        <div class="arrow-icons">
+          <img src="./assets/back-arrow.png" alt="back arrow">
+          <img src="./assets/next-arrow.png" alt="next arrow">
+        </div>
+    </div>
+    <img src="./assets/img.png" alt="hero image" class="feature-image animate__animated animate__fadeIn animate__delay-4s">
+
+    <div class="social-links  animate__animated animate__fadeIn animate__delay-4s">
+      <a href="#">FACEBOOK</a>
+      <a href="#">TWITTER</a>
+      <a href="#">INSTAGRAM</a>
     </div>
   </div> 
 </body>
