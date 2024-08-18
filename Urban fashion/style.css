@@ -21,7 +21,7 @@
     height: 15vh;
     margin: auto;
     display: flex;
-    align-content: center;
+    align-items: center;
 }
 .logo{
     width: 160px;
