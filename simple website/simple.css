@@ -16,11 +16,61 @@ body {
 }
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: 70px;
     line-height: 70px;
+    padding-top: 10px;
 
+
+}
+.logo {
+    color: #f5cb5c;
+    font-size: 45px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+.menu {
+    margin-right: 60px;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+li a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: #f5cb5c;
+    font-size: 24px;
+
+}
+.active {
+    color: #cfdbd5;
+}
+
+li a:hover {
+    background-color: #333533;
+    color: #cfdbd5;
+    width: 150px;
+    padding: 10px;
+}
+.margin-r {
+    margin-right: 0;
+
+}
+.btn1 {
+    width: 100px;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #f5cb5c;
+
+}
+.btn1:hover {
+    color: #cfdbd5;
+    background-color: #333533;
 }
