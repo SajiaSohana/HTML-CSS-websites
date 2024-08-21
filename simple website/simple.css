@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: .3s linear;
+    transition: 0.3s linear; /* Added transition for smoother hover effects */
 }
 
 body {
@@ -15,18 +15,16 @@ body {
     background-color: #242423;
     font-family: 'bfont';
 }
+
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Changed to space-between for better alignment */
     align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
     height: 70px;
-    line-height: 70px;
-    padding-top: 10px;
-
-
+    padding: 10px 60px; /* Added padding for better spacing around the content */
+    margin-top: 15px;
 }
+
 .logo {
     color: #f5cb5c;
     font-size: 45px;
@@ -34,94 +32,96 @@ nav {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 800;
+}
 
-}
-.menu {
-    margin-right: 60px;
-}
-li {
+.menu ul {
     list-style: none;
-    display: inline-block;
+    display: flex;
+    gap: 30px; /* Used gap to manage space between menu items */
 }
-li a {
+
+.menu li a {
     text-decoration: none;
-    margin-right: 30px;
     color: #f5cb5c;
     font-size: 24px;
-
+    transition: 0.3s; /* Added transition for hover effects */
 }
-.active {
+
+.menu li a.active, 
+.menu li a:hover {
     color: #cfdbd5;
-}
-
-li a:hover {
     background-color: #333533;
-    color: #cfdbd5;
-    width: 150px;
     padding: 10px;
+    border-radius: 4px; /* Added border-radius for smoother edges */
 }
-.margin-r {
-    margin-right: 0;
 
+.auth-buttons {
+    display: flex;
+    gap: 20px; /* Used gap to manage space between buttons */
 }
-.btn1 {
+
+.btn {
     width: 100px;
-    font-size: 15px;
     padding: 10px;
-    background-color: #f5cb5c;
-    font-family: "bfont";
-    font-weight: 900;
     font-size: 24px;
-    margin-right: 20px;
+    background-color: #f5cb5c;
+    color: #242423;
+    font-weight: 900;
     border: 2px solid #f5cb5c;
-
+    cursor: pointer;
+    transition: 0.3s; /* Added transition for hover effects */
+    font-family: "bfont";
 }
-.btn1:hover {
+
+.btn:hover {
     color: #cfdbd5;
     background-color: #333533;
-    border: 2px solid #333533;
+    border-color: #333533; /* Unified hover effect with color change */
 }
-.container{
+
+/* Container for the main content */
+.container {
     position: relative;
     height: 100%;
+    text-align: center; /* Added to center text within the container */
+    color: #f5cb5c;
 }
 
 h2 {
     position: absolute;
     top: 20%;
-    left: 35%;
+    width: 100%; /* Adjusted width to fully utilize space */
     font-size: 60px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: #f5cb5c;
 }
+
 p {
     position: absolute;
     top: 45%;
-    left: 7%;
-    right: 7%;
-    color: #f5cb5c;
+    left: 10%; /* Added left and right to control text width */
+    right: 10%;
     font-size: 24px;
-  
-
-
 }
+
 .start-btn {
     position: absolute;
     top: 75%;
-    left: 45%;
+    left: 50%;
+    transform: translateX(-50%); /* Used transform for perfect centering */
     width: 150px;
-    font-size: 15px;
     padding: 10px;
-    background-color: #f5cb5c;
-    font-family: "bfont";
-    font-weight: 900;
     font-size: 24px;
-    margin-right: 20px;
+    background-color: #f5cb5c;
+    font-weight: 900;
     border: 2px solid #f5cb5c;
+    cursor: pointer;
+    transition: 0.3s; /* Added transition for hover effects */
+    font-family: "bfont";
 }
+
 .start-btn:hover {
-        color: #cfdbd5;
-        background-color: #333533;
-        border: 2px solid #333533;
-    }
+    color: #cfdbd5;
+    background-color: #333533;
+    border-color: #333533; /* Unified hover effect with color change */
+}
