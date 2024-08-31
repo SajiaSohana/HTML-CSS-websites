@@ -133,6 +133,9 @@ a {
 	font-weight: 400;
 	text-transform: uppercase;
 }
+p  {
+    margin-top: 50px;
+}
 .downloadBtn {
 	display: block;
 	text-decoration: underline;
