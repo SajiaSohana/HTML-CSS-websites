@@ -8,6 +8,7 @@
     text-decoration: none;
 
 }
+/*navbar section*/
 header {
     position: fixed;
     width: 100%;
@@ -71,6 +72,7 @@ header {
     cursor: pointer;
 
 }
+/* hero section */
 section {
     padding: 5% 10%;
 
